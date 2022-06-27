@@ -1,4 +1,26 @@
+
+@media screen and (width:576px ){
+
+.form {
+    display: flex;
+}
+}
+
+
+
+
+@media screen and (max-width:768px ){
+
+
+
+}
+
+
+
+
 /* animaciones */
+
+
 @keyframes mujer_balanza {
     0%{opacity: 0;}
     25%{opacity: 0,3;}
@@ -37,15 +59,12 @@
     text-shadow: 0 1px 0 rgb(8, 8, 8)
 }
 
-
-
-
 .combinado{
   display: grid;
     grid-area: combinado;
     top: -4px;
-    width: 1266px;
-    height: 500px;
+    width: 1366px;
+    height: 400px;
     overflow: hidden;
     position: relative;
 
@@ -73,6 +92,11 @@ font-family: 'Manrope', sans-serif;
 text-shadow: 0 1px 0 rgb(8, 8, 8);
 }
 
+.encabezado {
+    color: rgb(250, 235, 193);
+font-family: 'Manrope', sans-serif;
+
+}
 
 
 .padre {
@@ -98,7 +122,10 @@ text-shadow: 0 1px 0 rgb(8, 8, 8);
 }
 
 
-
+.shadow-lg {
+    color: rgb(250, 235, 193);
+    font-family: 'Manrope', sans-serif;
+}
 
 .container-fluid {
 
@@ -232,12 +259,13 @@ text-shadow: 0 1px 0 rgb(8, 8, 8);
     align-items: center;
     justify-content: center;
     margin-top: 30px;
-    margin-right:800px;
+
 
 
     color: rgb(250, 235, 193);
     font-family: 'Manrope', sans-serif;
     text-shadow: 0 1px 0 rgb(8, 8, 8);
+
 }
 
 #descripcion-grupo {
@@ -257,44 +285,15 @@ text-shadow: 0 1px 0 rgb(8, 8, 8);
 .fieldset-consulta {    
     display: flex;
     flex-direction:column;
-    max-width:300px;
+    max-width:400px;
     transform: translate(10px,20px);
     
 }
-.formulario-1 {
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap:wrap;
-    justify-content: center;
-   
-    color: antiquewhite;
-    font-family: 'Manrope', sans-serif;
-    vertical-align: top;
-    text-align: justify;
-    margin-right: 100px ;
-}
-
-
-.opciones {
-    
-
-    color: black;
-    font-family: 'Manrope', sans-serif;
-}
-.boton {
+.btn {
 
     margin-bottom: 40px;
     background-image: -webkit-linear-gradient(right,  rgb(133, 20, 20), rgb(228, 27, 27));
 }
-.consultas-2 {    
-    display: flex;
-    flex-wrap:wrap;
-
-    width: 150px;
-    height: 70px;
-}
-
 .h4-especializacion {
     display: flex;
     flex-direction: row;
@@ -322,7 +321,7 @@ text-shadow: 0 1px 0 rgb(8, 8, 8);
     color: rgb(250, 235, 193);
     font-family: 'Manrope', sans-serif;
     text-shadow: 0 1px 0 rgb(8, 8, 8);
-    font-size: 29px;
+    font-size: 41px;
    
 }
 .formulario-2 {
@@ -341,7 +340,10 @@ text-shadow: 0 1px 0 rgb(8, 8, 8);
 .contacto-imagen {
     position: absolute;
     opacity: 1;
-  
+
+    width: 1366px;
+    height: 400px;
+    overflow: hidden;
         animation-name: mujer_balanza;
   animation-duration: 5s;
   animation-iteration-count:calc(1)

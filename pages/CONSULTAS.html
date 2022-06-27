@@ -17,73 +17,85 @@
         <h1>Consultas</h1> 
     </div>
         <header> 
-            <div class="shadow-lg p-3 mb-5 bg-body rounded">
-                <nav class="navbar navbar-expand-lg bg-light">
-                    <div class="container-fluid" >
-                      <a class="navbar-brand" href="..\INDEX.html">Inicio</a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                          <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="CONSULTAS.html">Consultas</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="ESPECIALIZACION.html">Especializacion</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="GRUPO.html">Grupo</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="CONTACTO.html">Contacto</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div> 
-                    </div>
-                  </nav>
-        </header>
-        <form class="formulario5">
-            <div class="formulario5">
+          <div class="shadow-lg p-3 mb-5 bg-body rounded">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid" >
+                  <a class="navbar-brand" href="..\INDEX.html">Inicio</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="CONSULTAS.html">Consultas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="ESPECIALIZACION.html">Especializacion</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="GRUPO.html">Grupo</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="CONTACTO.html">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div> 
+                </div>
+              </nav>
+              </header>
+           <form>
+            <div>
             <fieldset class="fieldset-consulta">
                 <legend> <h3 class="titulo-grupo"> Consultas </h3></legend>
-             <label class="formulario-1" for="Nombre"> Nombre </label>
-            <div></div>
-            <input type="text" id="Nombre"/>
+
+            <form class="form-floating">
+              <input type="text" id="floatingInputInvalid" placeholder="Nombre" value="">
+              <label for="floatingInputInvalid"></label>
+            </form>
             <br>
-            <label class="formulario-1" for="Email">Email</label>
-            <div></div>
-            <input type="email" id="Email"/>
+            <form class="form-floating">
+              <input type="email" id="floatingInputInvalid" placeholder="Email" value="">
+              <label for="floatingInputInvalid"></label>
+            </form>     
             <br>
-            <label class="formulario-1" for="Telefono">Telefono</label>
-            <div></div>
-            <input type="number" id="Telefono"/>
-            <div class="formulario-1">Localidad</div>
-            <select class="opciones" name="Localidad"> 
-                <option class="opciones" value="Salta">Salta</option>
-                <option class="opciones" value="Cordoba">Cordoba</option>
-                <option class="opciones" value="Santa Fe">Santa Fe</option>
-                <option class="opciones" value="La Pampa">La Pampa</option>
-                <option class="opciones" value="Chubut">Chubut</option>
-                <option class="opciones" value="Tierra del Fuego">Tierra del Fuego</option>
-                <option class="opciones" value="Jujuy">Jujuy</option>
-            </select>
+            <form class="form-floating">
+              <input type="number" id="floatingInputInvalid" placeholder="Telefono" value="">
+              <label for="floatingInputInvalid"></label>
+            </form>
             <br>
-            <div class="formulario-1">Consulta</div>
-            <textarea class="consultas-2" style="min-width:500px"> </textarea>
-            <div class="formulario-1">Area</div>
-            <select class="opciones" name="Area"> 
-                <option class="opciones" value="Derecho Penal">Derecho Penal</option>
-                <option class="opciones" value="Derecho Comercial">Derecho Comercial</option>
-                <option class="opciones" value="Derecho Laboral">Derecho Laboral</option>
-                <option class="opciones" value="Derecho de Familia">Derecho de Familia</option>
-            </select>
+            
+            <div class="form-floating">
+              <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                <option selected></option>
+                <option value="Salta">Salta</option>
+                <option value="Cordoba">Cordoba</option>
+                <option value="Santa Fe">Santa Fe</option>
+                <option value="La Pampa">La Pampa</option>
+                <option value="Chubut">Chubut</option>
+                <option value="Tierra del Fuego">Tierra del Fuego</option>
+              </select>
+              <label for="floatingSelect">Localidad</label>
+            </div>
             <br>
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              <label for="floatingTextarea2">Ingrese su Consulta</label>
+            </div>
             <br>
-            <div>
-                <input class="boton" type="submit" value="Enviar formulario">
-            </div>  
+            <div class="form-floating">
+              <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                <option selected></option>
+                <option value="Derecho Comercial">Derecho Comercial</option>
+                <option value="Derecho Laboral">Derecho Laboral</option>
+                <option value="Derecho de Familia">Derecho de Familia</option>
+                <option value="Derecho Penal">Derecho Penal</option>
+              </select>
+              <label for="floatingSelect">Area</label>
+            </div>
+            <br>
+            <button type="button" class="btn btn-danger">Enviar Formulario</button>
+            <br>
         </fieldset>
         </form>
         </div>
@@ -94,5 +106,7 @@
             <li class="pie"><a href="https://web.whatsapp.com/"><img class="imagene-de-pie" src="..\Multimedia\whatsapp.png" alt="icono whatsapp" width="35px"/></a></li>
             <li class="pie"><a href="https://www.google.com.ar/maps"><img class="imagenes-de-pie" src="..\Multimedia\maps.png" alt="icono maps" width="35px"/></a></li>
         </footer>
+         <!-- JavaScript Bundle with Popper -->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
 </html>
