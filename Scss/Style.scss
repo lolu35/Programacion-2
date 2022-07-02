@@ -1,0 +1,292 @@
+$color_1: rgb(255, 235, 193);
+$color_2: rgb(133, 20, 20);
+$color_3: rgb(250, 235, 193);
+$color_4: antiquewhite;
+$color_5: white;
+$color_6: rgb(34, 33, 32);
+$font-family_1: 'Manrope', sans-serif;
+$background-color_1: rgb(36, 33, 33);
+$background-color_2: rgb(133, 20, 20);
+
+/* animaciones */
+@keyframes mujer_balanza {
+	0% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 0,3;
+	}
+	50% {
+		opacity: 0,5;
+	}
+	75% {
+		opacity: 0,7;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+/* Inicio*/
+/* Footer */
+/* Grupo*/
+/* Consulta*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#fondo {
+	background-image: linear-gradient(to right, black, rgb(73, 69, 69));
+}
+.shadow-lg {
+	background-image: -webkit-linear-gradient(right, rgb(102, 16, 16), rgb(233, 45, 45));
+	color: $color_3;
+	font-family: $font-family_1;
+}
+.bg-light {
+	background-image: -webkit-linear-gradient(right, rgb(102, 16, 16), rgb(233, 45, 45));
+}
+.nav-link {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	transition: all 1s;
+	transform: translate(0px , 0px);
+	color: $color_1;
+	text-shadow: 1px 0 rgb(8, 8, 8);
+	&:hover {
+		transform: translate(3px , 2px);
+		color: $color_2;
+		text-shadow: 0 1px 0 rgb(8, 8, 8);
+	}
+}
+.combinado {
+	display: grid;
+	grid-area: combinado;
+	top: -4px;
+	width: 1366px;
+	height: 400px;
+	overflow: hidden;
+	position: relative;
+}
+.img-fluid {
+	animation-name: mujer_balanza;
+	animation-duration: 5s;
+	animation-iteration-count: calc(1);
+}
+h1 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-image: -webkit-linear-gradient(right, rgb(133, 20, 20), rgb(233, 45, 45));
+	text-align: center;
+	color: $color_3;
+	font-family: $font-family_1;
+	text-shadow: 0 1px 0 rgb(8, 8, 8);
+}
+.encabezado {
+	color: $color_3;
+	font-family: $font-family_1;
+}
+.padre {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.lista {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-image: -webkit-linear-gradient(right, rgb(133, 20, 20), rgb(233, 45, 45));
+	margin: 18px;
+	padding: 10px 42px;
+	font-family: $font-family_1;
+	font-weight: bold;
+}
+.container-fluid {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	transition: all 1s;
+	transform: translate(0px , 0px);
+	color: $color_1;
+	text-shadow: 1px 0 rgb(8, 8, 8);
+	&:hover {
+		transform: translate(3px , 2px);
+		color: $color_2;
+		text-shadow: 0 1px 0 rgb(8, 8, 8);
+	}
+}
+.contenedor {
+	display: flex;
+	position: absolute;
+	opacity: 1;
+}
+.texto-encima {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	color: $color_4;
+	text-align: justify;
+	justify-content: center;
+	margin-right: 45PX;
+	margin-left: 45PX;
+	margin-top: 50px;
+	font-family: $font-family_1;
+	color: $color_3;
+	text-shadow: 0 1px 0 rgb(8, 8, 8);
+}
+.texto-footer {
+	display: inline;
+	text-align: left;
+	padding-left: 20px;
+}
+.footer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: $background-color_1;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 150%;
+	height: 40px;
+	color: $color_5;
+}
+.pie {
+	display: inline-table;
+	padding: 5px;
+}
+.imagenes-de-pie {
+	border-radius: 7px;
+}
+.imagen-Es {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	display: block;
+	float: left;
+	padding-left: 50px;
+	margin-top: 60px;
+	align-items: center;
+	justify-content: center;
+	margin-right: 100px;
+	animation-name: mujer_balanza;
+	animation-duration: 5s;
+	animation-iteration-count: calc(1);
+}
+.fieldsets {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.imagen-grup {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	align-items: center;
+	margin-top: 50px;
+	animation-name: mujer_balanza;
+	animation-duration: 5s;
+	animation-iteration-count: calc(1);
+}
+.titulo-grupo {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	color: $color_3;
+	font-family: $font-family_1;
+	text-shadow: 0 1px 0 rgb(8, 8, 8);
+}
+.titulo-grupo2 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+	color: $color_3;
+	font-family: $font-family_1;
+	text-shadow: 0 1px 0 rgb(8, 8, 8);
+}
+#descripcion-grupo {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	color: $color_4;
+	font-family: $font-family_1;
+	vertical-align: top;
+	text-align: justify;
+	margin: 50px;
+}
+.fieldset-consulta {
+	display: flex;
+	flex-direction: column;
+	max-width: 400px;
+	transform: translate(10px,20px);
+}
+.btn {
+	margin-bottom: 40px;
+	background-image: -webkit-linear-gradient(right, rgb(133, 20, 20), rgb(228, 27, 27));
+}
+.h4-especializacion {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	color: $color_4;
+	font-family: $font-family_1;
+	padding-left: 50px;
+	padding-right: 100px;
+	padding-bottom: 65px;
+	vertical-align: top;
+	text-align: justify;
+}
+.contacto {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: $background-color_2;
+	text-align: center;
+	color: $color_3;
+	font-family: $font-family_1;
+	text-shadow: 0 1px 0 rgb(8, 8, 8);
+	font-size: 41px;
+}
+.formulario-2 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: relative;
+	text-align: justify;
+	margin-right: 45PX;
+	margin-left: 30PX;
+	font-family: $font-family_1;
+	color: $color_6;
+}
+.contacto-imagen {
+	position: absolute;
+	opacity: 1;
+	width: 1366px;
+	height: 400px;
+	overflow: hidden;
+	animation-name: mujer_balanza;
+	animation-duration: 5s;
+	animation-iteration-count: calc(1);
+}
+@media screen and (width:576px ) {
+	.form {
+		display: flex;
+	}
+}
