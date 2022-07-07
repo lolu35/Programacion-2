@@ -26,9 +26,9 @@ $background-color_2: rgb(133, 20, 20);
 		opacity: 1;
 	}
 }
-/* Inicio*/
-/* Footer */
-/* Grupo*/
+
+
+
 /* Consulta*/
 * {
 	margin: 0;
@@ -61,12 +61,17 @@ $background-color_2: rgb(133, 20, 20);
 		text-shadow: 0 1px 0 rgb(8, 8, 8);
 	}
 }
+
+@mixin sizes ($width, $height ) {
+	height: $height;
+	width: $width 
+}
+
 .combinado {
 	display: grid;
 	grid-area: combinado;
 	top: -4px;
-	width: 1366px;
-	height: 400px;
+	@include sizes(1366px, 400px);
 	overflow: hidden;
 	position: relative;
 }
@@ -122,6 +127,7 @@ h1 {
 		text-shadow: 0 1px 0 rgb(8, 8, 8);
 	}
 }
+/* Inicio*/
 .contenedor {
 	display: flex;
 	position: absolute;
@@ -141,6 +147,8 @@ h1 {
 	color: $color_3;
 	text-shadow: 0 1px 0 rgb(8, 8, 8);
 }
+
+/* Footer */
 .texto-footer {
 	display: inline;
 	text-align: left;
@@ -166,21 +174,9 @@ h1 {
 .imagenes-de-pie {
 	border-radius: 7px;
 }
-.imagen-Es {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	display: block;
-	float: left;
-	padding-left: 50px;
-	margin-top: 60px;
-	align-items: center;
-	justify-content: center;
-	margin-right: 100px;
-	animation-name: mujer_balanza;
-	animation-duration: 5s;
-	animation-iteration-count: calc(1);
-}
+
+/* Grupo*/
+
 .fieldsets {
 	display: flex;
 	flex-direction: row;
@@ -229,16 +225,54 @@ h1 {
 	text-align: justify;
 	margin: 50px;
 }
+
+/* Consulta*/
 .fieldset-consulta {
 	display: flex;
 	flex-direction: column;
 	max-width: 400px;
 	transform: translate(10px,20px);
+	width:20%;
+    margin-left:40%;
+    margin-right:40%;
 }
 .btn {
 	margin-bottom: 40px;
 	background-image: -webkit-linear-gradient(right, rgb(133, 20, 20), rgb(228, 27, 27));
+	border-radius: 8px;
+	color: $color_3;
+	font-family: $font-family_1;
+	text-shadow: 0 1px 0 rgb(8, 8, 8);
+
 }
+/*Especializacion*/
+
+.imagen-Es {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	display: block;
+    border-radius: 20px;
+	float: left;
+	padding-left: 10px;
+	margin-top: 40px;
+	align-items: center;
+	justify-content: center;
+	margin-right: 90px;
+	animation-name: mujer_balanza;
+	animation-duration: 5s;
+	animation-iteration-count: calc(1);
+}
+
+.btn--EnviarConsulta {
+	@extend .btn;
+	width:20%;
+    margin-left:40%;
+    margin-right:40%;
+	transform: scale(120%);
+	
+}
+
 .h4-especializacion {
 	display: flex;
 	flex-direction: row;
@@ -251,6 +285,7 @@ h1 {
 	vertical-align: top;
 	text-align: justify;
 }
+/* Contacto */
 .contacto {
 	display: flex;
 	flex-direction: row;
@@ -278,8 +313,7 @@ h1 {
 .contacto-imagen {
 	position: absolute;
 	opacity: 1;
-	width: 1366px;
-	height: 400px;
+	@include sizes(1366px,400px );
 	overflow: hidden;
 	animation-name: mujer_balanza;
 	animation-duration: 5s;
