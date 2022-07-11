@@ -1,0 +1,26 @@
+/* Footer */
+.texto-footer {
+	display: inline;
+	text-align: left;
+	padding-left: 20px;
+}
+.footer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: $background-color_1;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 150%;
+	height: 40px;
+	color: $color_5;
+}
+.pie {
+	display: inline-table;
+	padding: 5px;
+}
+.imagenes-de-pie {
+	border-radius: 7px;
+}

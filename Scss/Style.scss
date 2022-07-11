@@ -1,12 +1,7 @@
-$color_1: rgb(255, 235, 193);
-$color_2: rgb(133, 20, 20);
-$color_3: rgb(250, 235, 193);
-$color_4: antiquewhite;
-$color_5: white;
-$color_6: rgb(34, 33, 32);
-$font-family_1: 'Manrope', sans-serif;
-$background-color_1: rgb(36, 33, 33);
-$background-color_2: rgb(133, 20, 20);
+@import "color.scss";
+@import "Navbar.scss";
+@import "Footer.scss";
+
 
 /* animaciones */
 @keyframes mujer_balanza {
@@ -26,40 +21,10 @@ $background-color_2: rgb(133, 20, 20);
 		opacity: 1;
 	}
 }
-
-
-
-/* Consulta*/
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-#fondo {
-	background-image: linear-gradient(to right, black, rgb(73, 69, 69));
-}
-.shadow-lg {
-	background-image: -webkit-linear-gradient(right, rgb(102, 16, 16), rgb(233, 45, 45));
-	color: $color_3;
-	font-family: $font-family_1;
-}
-.bg-light {
-	background-image: -webkit-linear-gradient(right, rgb(102, 16, 16), rgb(233, 45, 45));
-}
-.nav-link {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	transition: all 1s;
-	transform: translate(0px , 0px);
-	color: $color_1;
-	text-shadow: 1px 0 rgb(8, 8, 8);
-	&:hover {
-		transform: translate(3px , 2px);
-		color: $color_2;
-		text-shadow: 0 1px 0 rgb(8, 8, 8);
-	}
+.img-fluid {
+	animation-name: mujer_balanza;
+	animation-duration: 5s;
+	animation-iteration-count: calc(1);
 }
 
 @mixin sizes ($width, $height ) {
@@ -75,11 +40,7 @@ $background-color_2: rgb(133, 20, 20);
 	overflow: hidden;
 	position: relative;
 }
-.img-fluid {
-	animation-name: mujer_balanza;
-	animation-duration: 5s;
-	animation-iteration-count: calc(1);
-}
+
 h1 {
 	display: flex;
 	flex-direction: row;
@@ -112,6 +73,7 @@ h1 {
 	font-family: $font-family_1;
 	font-weight: bold;
 }
+/* Inicio*/
 .container-fluid {
 	display: flex;
 	flex-direction: row;
@@ -127,7 +89,7 @@ h1 {
 		text-shadow: 0 1px 0 rgb(8, 8, 8);
 	}
 }
-/* Inicio*/
+
 .contenedor {
 	display: flex;
 	position: absolute;
@@ -148,32 +110,6 @@ h1 {
 	text-shadow: 0 1px 0 rgb(8, 8, 8);
 }
 
-/* Footer */
-.texto-footer {
-	display: inline;
-	text-align: left;
-	padding-left: 20px;
-}
-.footer {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	background-color: $background-color_1;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 150%;
-	height: 40px;
-	color: $color_5;
-}
-.pie {
-	display: inline-table;
-	padding: 5px;
-}
-.imagenes-de-pie {
-	border-radius: 7px;
-}
 
 /* Grupo*/
 
