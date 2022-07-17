@@ -1,12 +1,4 @@
 Cambios realizados 
  
-1. Se  agrego un Extend  en .btn—Especializacion. 
-1.1	Se agregaron botones de enviar consulta debajo de cada especialización.
-1.2	Se redondearon los bordes de los  botones 
-2.Se agrego un Mixin sizes en combinado y  contacto-imagen 
-3.Se agregaron y corrigieron títulos a las paginas.
-4.Se agregaron y corrigieron descripciones correctas a todas las imágenes.
-5.Se corrigio el formulario en la sección Consultas ahora se encuentra al medio por defecto 
-cuando se visualiza en pantalla completa.
-5.1 Se redondearon los bordes del botón de enviar formulario.
-
+1.Se corrigieron los partials
+2.Se citarion en el archivo principal " Main.scss" los import correctamente.
